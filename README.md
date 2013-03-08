@@ -6,16 +6,17 @@ The goal of Ti.Geo.Background is to make performing background geo location easy
 
 <b>iOS</b>
 Before starting with iOS you need to make sure that the UIBackgroundMode for location has been added to your tiapp.xml. Below shows the snippet that needs to be added into your <ios> configuration node.
-<pre><code>
+
+```
     <key>UIBackgroundModes</key>
     <array>
         <string>location</string>
-    </array>
-</code></pre>
+    </array> 
+```
 
 <b>Android</b>
 Before starting with Android you need to make sure that the following service is added to your tiapp.xml.  Below shows a snippet demonstrating the service record that is needed.
-<pre><code>
+```
 	<android xmlns:android="http://schemas.android.com/apk/res/android">
         <manifest android:installLocation="auto">
             <supports-screens android:anyDensity="false"
@@ -25,12 +26,12 @@ Before starting with Android you need to make sure that the following service is
 	        <service url="bGeo/Ti.Geo.Timer.js" type="interval"/>
 	    </services>
 	</android>
-</code></pre>
+```
 
 
 <h2>How To Example</h2>
 
-The aim of Ti.Geo.Background is to simply collect coordinates in the background. Because of this, testing on your device is highly recommended.  For an example demonstrating how to use Ti.Geo.Background and all of it's configurations please review the included [app.js]() file.
+The aim of Ti.Geo.Background is to simply collect coordinates in the background. Because of this, testing on your device is highly recommended.  For an example demonstrating how to use Ti.Geo.Background and all of it's configurations please review the included [app.js](https://github.com/benbahrenburg/Ti.Geo.Background/blob/master/app.js) file.
 
 <h2>Licensing & Support</h2>
 
