@@ -19,7 +19,7 @@ var config = {
 	maxAgeDefault : 30,
 	distanceFilterDefault : 100,
 	isActive : false,
-	eventList : [];
+	eventList : []
 };
 
 
@@ -142,7 +142,7 @@ exports.removeEventListener=function(eventName,callback){
 };
 
 exports.addEventListener=function(eventName,callback){
-	_eventList.push({eventName:eventName,callback:callback});
+	config.eventList.push({eventName:eventName,callback:callback});
 };
 exports.active = function(){
 	reurn config.isActive;
