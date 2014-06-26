@@ -145,7 +145,7 @@ exports.addEventListener=function(eventName,callback){
 	config.eventList.push({eventName:eventName,callback:callback});
 };
 exports.active = function(){
-	reurn config.isActive;
+	return config.isActive;
 };
 exports.setup = function(){
 	config.isSetup = true;
