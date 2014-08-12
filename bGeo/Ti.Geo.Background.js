@@ -150,7 +150,7 @@ exports.active = function(){
 exports.setup = function(){
 	config.isSetup = true;
 	
-	var db = Ti.Database.open(_dbName);
+	var db = Ti.Database.open(config.dbName);
 	
 	db.execute('CREATE TABLE IF NOT EXISTS RECORD_CACHE_TBL (RECORD_ID INTEGER PRIMARY KEY  AUTOINCREMENT  NOT NULL, LATITUDE DOUBLE, LONGITUDE DOUBLE, RECORD_DATE DOUBLE)');
 	db.execute('CREATE TABLE IF NOT EXISTS RECORD_ERROR_TBL (RECORD_ID INTEGER PRIMARY KEY  AUTOINCREMENT  NOT NULL, MESSAGE TEXT, RECORD_DATE DOUBLE)');
