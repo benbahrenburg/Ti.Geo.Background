@@ -135,8 +135,9 @@ exports.removeEventListener=function(eventName,callback){
 	for (var iLoop=0;iLoop<iLength;iLoop++){
 		if((config.eventList[iLoop].eventName===eventName) && 
 		  (config.eventList[iLoop].callback == callback)){
-			  config.eventList.splice(i, 1);
+			  config.eventList.splice(iLoop, 1);
 		      iLoop--; //decrement	  	
+		      iLength--;
 		  }
 	}
 };
